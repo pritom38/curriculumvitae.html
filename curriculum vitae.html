@@ -1,0 +1,135 @@
+<!--
+    Question 5.  Create a web site for your curriculum vitae. You must use a two-column layout and the 
+second column must be the navigation bar.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            max-width: 960px;
+            margin: 0 auto;
+            background-color: #f8f8f8;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-content {
+            flex: 2;
+            padding: 20px;
+        }
+
+        .main-content h1 {
+            margin-bottom: 10px;
+        }
+
+        .photo img {
+            max-width: 200px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-content h2 {
+            margin-top: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        .main-content p {
+            line-height: 1.6;
+        }
+
+        .education-table {
+            width: 100%;
+        }
+
+        .education-table th, .education-table td {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .education-table th {
+            text-align: left;
+            background-color: #f0f0f0;
+        }
+
+        .navigation {
+            flex-basis: 200px;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .navigation ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .navigation li {
+            margin-bottom: 10px;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            color: #333;
+            display: block;
+            padding: 8px;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+
+        .navigation a:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <h1>Md. Ali Mahmud Pritom</h1>
+            <div class="photo">
+                <img src="img.jpg" alt="">
+            </div>
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm Pritom, a student of EdTech in BDU and passionate website developer. With a strong foundation in education and a love for technology, I strive to bridge the gap between learning and technology to create innovative solutions in the field of education.
+            </p>
+            <h2>Education</h2>
+            <table class="education-table">
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Level</th>
+                </tr>
+                <tr>
+                    <td>Bachelor of Science</td>
+                    <td>BDU</td>
+                    <td>3.2</td>
+                </tr>
+            </table>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
